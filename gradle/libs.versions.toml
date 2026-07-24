@@ -1,11 +1,11 @@
 [versions]
-agp = "8.2.2"
-kotlin = "1.9.22"
-coreCtx = "1.12.0"
-lifecycle = "2.7.0"
-activityCompose = "1.8.2"
-composeBom = "2024.02.00"
-securityCrypto = "1.1.0-alpha06"
+agp = "9.2.0"
+kotlin = "2.3.21"
+coreCtx = "1.19.0"
+lifecycle = "2.11.0"
+activityCompose = "1.13.0"
+composeBom = "2026.06.00"
+securityCrypto = "1.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreCtx" }
@@ -21,4 +21,4 @@ androidx-security-crypto = { group = "androidx.security", name = "security-crypt
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
